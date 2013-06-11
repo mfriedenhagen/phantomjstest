@@ -20,8 +20,7 @@ public class AppTest {
     @Test
     public void gotoHomePage() throws InterruptedException {
         driver.get("http://huschteguzzel.de/hudson/");
-        assertEquals("All [Jenkins]", driver.getTitle());
-        driver.findElement(By.partialLinkText("oneandone-ono-artifactory-shared")).click();
+        JenkinsHomePage.create(driver).gotoJobPage("oneandone-ono-artifactory-shared");
     }
 
 }
