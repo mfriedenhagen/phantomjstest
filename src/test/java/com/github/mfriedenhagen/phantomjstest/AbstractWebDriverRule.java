@@ -9,7 +9,6 @@ import com.google.common.io.Files;
 import java.io.File;
 import java.io.IOException;
 import org.junit.runner.Description;
-import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.Statement;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
