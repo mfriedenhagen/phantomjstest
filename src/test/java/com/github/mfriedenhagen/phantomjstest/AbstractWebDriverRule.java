@@ -51,7 +51,7 @@ public abstract class AbstractWebDriverRule implements WebDriverRule {
                 } finally {
                     System.err.println("Last URL=" + driver.getCurrentUrl());
                     System.err.println("Last TITLE=" + driver.getTitle());
-                    driver.close();
+                    driver.quit();
                     after();
                 }
             }
